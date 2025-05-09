@@ -1,0 +1,112 @@
+/* General reset for the navbar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styling the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #0e2bcc, #f2eeeefe); /* Cool blue-to-teal gradient */
+    padding: 20px 40px;
+    color: #fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-radius: 10px; /* Rounded corners for a refined look */
+}
+
+/* Logo styling */
+.navbar .logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15); /* Subtle text shadow for depth */
+    transition: color 0.3s ease;
+}
+
+.navbar .logo:hover {
+    color: #ff9800; /* Golden color on hover for elegance */
+}
+
+/* Styling the navigation links */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Styling the list items */
+.nav-links li {
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, padding 0.3s ease;
+}
+
+.nav-links li:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Soft hover effect with slight transparency */
+    transform: translateY(-5px); /* Slight hover lift effect */
+    padding: 10px 25px; /* Slightly increase padding to highlight the item */
+}
+
+/* Styling the anchor links */
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff9800; /* Golden color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Styling the login button */
+.nav-btn {
+    padding: 12px 30px;
+    background-color: #ff9800; /* Golden color for the button */
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.nav-btn:hover {
+    background-color: #e68900; /* Slightly darker golden color on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .nav-btn {
+        margin-top: 15px;
+        width: 100%;
+    }
+}
